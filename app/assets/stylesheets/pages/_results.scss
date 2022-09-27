@@ -11,23 +11,18 @@
   text-align: center;
 }
 
-// .result-container{
-//   align-items: center;
-//   justify-content: center;
-// }
-
 .titles--KPI{
   display: flex;
-  justify-content: space-around;
-  width: 276px;
+  justify-content: space-between;
+  width: 285px;
   margin-left: 39px;
 }
 
 .title-kpi {
   font-size: 34px;
   font-weight: bold;
-  margin-left: -60px;
-  margin-right: 20px;
+  margin-left: -15px;
+  margin-right: 5px;
 }
 
 
@@ -72,43 +67,43 @@
     margin-top: 83px;
     margin-left: 5px;
 }
-.tooltip-text {
-  visibility: hidden;
-  position: absolute;
-  z-index: 1;
-  width: 250px;
-  color: white;
-  font-size: 18px;
-  // background-color: #192733;
-  background-color : rgba($color: #000000, $alpha: 0.8);
-  border-radius: 10px;
-  padding: 10px 15px 10px 15px;
-  line-height: 30px;
-}
+// .tooltip-text {
+//   visibility: hidden;
+//   position: absolute;
+//   z-index: 1;
+//   width: 250px;
+//   color: white;
+//   font-size: 18px;
+//   // background-color: #192733;
+//   background-color : rgba($color: #000000, $alpha: 0.8);
+//   border-radius: 10px;
+//   padding: 10px 15px 10px 15px;
+//   line-height: 30px;
+// }
 
-.hover-text:hover .tooltip-text {
-  visibility: visible;
-}
+// .hover-text:hover .tooltip-text {
+//   visibility: visible;
+// }
 
-.left {
-  top: 82px;
-  right: 90%;
-}
+// .left {
+//   top: 82px;
+//   right: 90%;
+// }
 
 
-.numbers {
-  position: relative;
-  margin: -83px;
-  margin-right: -85px;
-  text-align: center;
-}
+// .numbers {
+//   position: relative;
+//   margin: -83px;
+//   margin-right: -85px;
+//   text-align: center;
+// }
 
-.chart {
-  position: relative;
-  margin: -80px;
-  margin-left: 5px;
-  text-align: center;
-}
+// .chart {
+//   position: relative;
+//   margin: -80px;
+//   margin-left: 5px;
+//   text-align: center;
+// }
 
 #targetW{
   font-size: 48px;
@@ -175,15 +170,15 @@ h3{
 
 }
 
-.tooltipComparison{
-  margin-bottom: -40px;
-  margin-right: 20px;
-  margin-top: -175px;
-  position: relative;
-  text-align: center;
-}
+// .tooltipComparison{
+//   margin-bottom: -40px;
+//   margin-right: 20px;
+//   margin-top: -175px;
+//   position: relative;
+//   text-align: center;
+// }
 
-.tooltip-text3 {
-  width: 190px;
-  padding: 10px 15px 10px 15px;
-}
+// .tooltip-text3 {
+//   width: 190px;
+//   padding: 10px 15px 10px 15px;
+// }
