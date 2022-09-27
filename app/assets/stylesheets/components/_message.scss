@@ -25,13 +25,13 @@
   .form-control {
     margin-left: 0;
     margin-right: 0;
-    width: 64vw;
-    height: 9vh;
+    width: 280px;
+    height: 85px;
     border-top-left-radius: 8px;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-left-radius: 8px;
-    margin-top: 1rem;
+    margin-top: 16px;
     margin-bottom: 0;
     &:focus{
       color: #0E0000;
@@ -50,13 +50,13 @@
 }
 
 .messages {
-  height: 60vh;
+  height: 565px;
   overflow-y: scroll;
 }
 
 .send-btn {
   width: 100px;
-  height: 9vh;
+  height: 85px;
   font-size: 16px;
   font-weight: bold;
   color: #313133;
@@ -68,7 +68,7 @@
   border-bottom-left-radius: 0;  // box-shadow: 12px 12px 24px rgba(79,209,197,.64);
   padding: 10px;
   text-decoration: none;
-  margin-top: 1rem;
+  margin-top: 16px;
 
 }
 

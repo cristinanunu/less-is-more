@@ -25,11 +25,15 @@ body {
   letter-spacing: 0.2px;
   font-family: 'Comfortaa', cursive;
   letter-spacing: 1.1px;
-  min-height: 100vh;
+  display: block;
+  overflow: auto;
+}
+
+.container {
+  width: 390px;
 }
 
 button:active {
   outline: none;
   border: none;
 }
-

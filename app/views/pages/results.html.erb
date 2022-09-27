@@ -5,66 +5,66 @@
   <div class="house_user" data-value="<%= @house_user %>"></div>
   <div class="leisure_user" data-value="<%= @leisure_user %>"></div>
 
-  <div class="results-container">
+  <div>
     <div class="results-card-pie">
-      <div class="container container-pie">
+      <div>
         <div>
           <h1 id="title-result"> My CO2 Impact </h1>
         </div>
         <div class="middle ">
-          <div class="d-flex justify-content-around titles--KPI">
+          <div class="titles--KPI">
             <h3 class="title-kpi">Co2 in kg</h3>
             <h3 class="title-kpi">Target</h3>
-            <div class=" hover-text ">
+            <div class=" hover-text numbers ">
               <i class="fa-solid fa-circle-info" id="info"></i>
               <span class="tooltip-text left" >Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %>kg</strong>. Which is by far too much. We need to reach 2000kg (=2tons) per person to ensure a liveable world for our children.</span>
             </div>
           </div>
-          <div class="d-flex justify-content-around">
+          <div class="nr-result">
             <p id="KPI"><%= @co2_weighted.round(0) %></p>
             <p id="targetW">2000</p>
           </div>
 
-          <div class="containerpie d-flex ">
-            <h2 class="split mx-0 text-center">Split per category</h2>
-            <div class="hover-text">
+          <div class="containerpie">
+            <h2 class="split text-center">Split per category</h2>
+            <div class="hover-text chart">
               <i class="fa-solid fa-circle-info" id="info2"></i>
               <span class="tooltip-text tooltip-text2 left" >Your Co2 impact is mainly coming from your transportation and your food.
               </span>
             </div>
           </div>
-          <div class="my-3">
-            <canvas id="myChart" style="display: block; box-sizing: border-box; height: 154px; width: 154.5px;" width="350" height="350"></canvas>
+          <div class="graphics">
+            <canvas id="myChart" style="display: block; box-sizing: border-box; height: 280px; width: 280px;"></canvas>
           </div>
+      </div>
+    </div>
+
+    <div class="container-radar">
+      <div class="transportcountry" data-value="<%= @transport_country %>"></div>
+      <div class="foodcountry" data-value="<%= @food_country %>"></div>
+      <div class="housecountry" data-value="<%= @house_country %>"></div>
+      <div class="leisurecountry" data-value="<%= @leisure_country %>"></div>
+      <div >
+        <h2 class="comparison text-center ">Comparison</h2>
+
+        <div class="hover-text tooltipComparison">
+          <i class="fa-solid fa-circle-info" id="info3"></i>
+            <span class="tooltip-text tooltip-text3">We are comparing your impact per category versus <%= @co2_weighted.round(0) %>kg average citizen
+            </span>
         </div>
-  </div>
-
-  <div class="container-radar">
-    <div class="transportcountry" data-value="<%= @transport_country %>"></div>
-    <div class="foodcountry" data-value="<%= @food_country %>"></div>
-    <div class="housecountry" data-value="<%= @house_country %>"></div>
-    <div class="leisurecountry" data-value="<%= @leisure_country %>"></div>
-    <div >
-      <h2 class="comparison mx-0 mb-0 text-center ">Comparison</h2>
-
-      <div class="hover-text tooltipComparison">
-        <i class="fa-solid fa-circle-info" id="info3"></i>
-          <span class="tooltip-text" style="top: 0px; right: 10%;">We are comparing your impact per category versus <%= @co2_weighted.round(0) %>kg average citizen
-          </span>
+      </div>
+      <div class="graphics">
+        <canvas id="myRadar" style="display: block; box-sizing: border-box; width: 280px; height: 280px;"></canvas>
       </div>
     </div>
-    <div class="my-3">
-      <canvas id="myRadar" width="350" height="350" style="display: block; box-sizing: border-box; height: 254px; width: 254.5px;"></canvas>
-    </div>
-    <div class="container" id="buttonhome">
-      <div class="button-container">
-        <span  class="mask" id="maskresult" ><strong>Get ideas!</strong></span>
-        <% if current_user %>
-        <%= link_to '<button type="button" name="Hover" >Get ideas!</button>'.html_safe, ideas_path(refresh: true) %>
-        <% else %>
-          <%= link_to '<button type="button" name="Hover" >Get ideas!</button>'.html_safe, new_user_registration_path(co:@co2_weighted) %>
-        <% end %>
-      </div>
+      <%# <div class="container"> %>
+    <div>
+      <%# <span>Get ideas!</span> %>
+      <% if current_user %>
+      <%= link_to 'Get ideas!'.html_safe, ideas_path(refresh: true), class: "button-container" %>
+      <% else %>
+        <%= link_to 'Get ideas!'.html_safe, new_user_registration_path(co:@co2_weighted), class: "button-container" %>
+      <% end %>
     </div>
   </div>
 </div>
