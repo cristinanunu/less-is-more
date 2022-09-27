@@ -15,10 +15,10 @@
           <div class="titles--KPI">
             <h3 class="title-kpi">Co2 in kg</h3>
             <h3 class="title-kpi">Target</h3>
-            <div class=" hover-text numbers ">
-              <i class="fa-solid fa-circle-info" id="info"></i>
-              <span class="tooltip-text left" >Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %>kg</strong>. Which is by far too much. We need to reach 2000kg (=2tons) per person to ensure a liveable world for our children.</span>
-            </div>
+            <%# <div class=" hover-text numbers "> %>
+              <%# <i class="fa-solid fa-circle-info" id="info"></i> %>
+              <%# <span class="tooltip-text left" >Your Co2 Footprint is <strong><%= @co2_weighted.round(0) %><!--kg</strong>. Which is by far too much. We need to reach 2000kg (=2tons) per person to ensure a liveable world for our children.</span> %>-->
+            <%# </div> %>
           </div>
           <div class="nr-result">
             <p id="KPI"><%= @co2_weighted.round(0) %></p>
@@ -27,10 +27,10 @@
 
           <div class="containerpie">
             <h2 class="split text-center">Split per category</h2>
-            <div class="hover-text chart">
-              <i class="fa-solid fa-circle-info" id="info2"></i>
-              <span class="tooltip-text tooltip-text2 left" >Your Co2 impact is mainly coming from your transportation and your food.
-              </span>
+            <%# <div class="hover-text chart"> %>
+              <%# <i class="fa-solid fa-circle-info" id="info2"></i> %>
+              <%# <span class="tooltip-text tooltip-text2 left" >Your Co2 impact is mainly coming from your transportation and your food. %>
+              <%# </span> %>
             </div>
           </div>
           <div class="graphics">
@@ -47,11 +47,11 @@
       <div >
         <h2 class="comparison text-center ">Comparison</h2>
 
-        <div class="hover-text tooltipComparison">
+        <%# <div class="hover-text tooltipComparison">
           <i class="fa-solid fa-circle-info" id="info3"></i>
-            <span class="tooltip-text tooltip-text3">We are comparing your impact per category versus <%= @co2_weighted.round(0) %>kg average citizen
-            </span>
-        </div>
+            <%# <span class="tooltip-text tooltip-text3">We are comparing your impact per category versus <%= @co2_weighted.round(0) %><!--kg average citizen -->
+            <%# </span> %>
+        <%# </div>  %>
       </div>
       <div class="graphics">
         <canvas id="myRadar" style="display: block; box-sizing: border-box; width: 280px; height: 280px;"></canvas>

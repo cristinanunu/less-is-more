@@ -19,9 +19,9 @@
       <%= render "messages/messagesform", message: @message %>
   </div>
 </div>
-<div class="container">
-  <div class="button-container">
-    <a class="mask" href="search"><strong>Back to Community</strong></a>
-    <%= link_to ' <button type="button" name="Hover" >Back to Community</button>'.html_safe, search_path %>
+<%# <div class="container"> %>
+  <div>
+    <%# <a class="mask" href="search"><strong>Back to Community</strong></a> %>
+    <%= link_to ' <button type="button" name="Hover" class="button-container">Back to Community</button>'.html_safe, search_path %>
   </div>
-</div>
+<%# </div> %>
