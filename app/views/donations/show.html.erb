@@ -1,4 +1,4 @@
-<div class="results-container">
+<%# <div class="results-container"> %>
   <div class="results-card x-center">
     <h1><%= @donation.name %></h1>
     <p>Amount: <%= @donation.price / 100 %>€</p>
@@ -8,4 +8,4 @@
       <%= submit_tag 'Donate', class: 'pay_btn' %>
     <% end %>
   </div>
-</div>
+<%# </div> %>
