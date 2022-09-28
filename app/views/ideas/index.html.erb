@@ -1,5 +1,5 @@
 
-<div class="fullcard-container">
+<%# <div class="fullcard-container"> %>
 
   <div class="ideas-container">
 
@@ -127,11 +127,11 @@
         <button id="love"><i class="fa fa-heart"></i></button>
       </div>
 
-      <%# <div class="container"> %>
-        <div>
-          <%# <a class="mask" href="favourite"><strong>Set My Target!</strong></a> %>
-          <%= link_to ' <button type="button" name="Hover" class="button-container" >Set My Target!</button>'.html_safe, favourites_path(refresh: true) %>
-      </div>
 
   </div>
-</div>
+  <%# <div class="container"> %>
+    <div>
+      <%# <a class="mask" href="favourite"><strong>Set My Target!</strong></a> %>
+      <%= link_to ' <button type="button" name="Hover" class="button-container" >Set My Target!</button>'.html_safe, favourites_path(refresh: true) %>
+  </div>
+<%# </div> %>
